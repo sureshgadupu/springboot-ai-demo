@@ -1,0 +1,23 @@
+###
+GET http://localhost:8080/chatai/movieRecommendation?
+    genre="action"
+
+###
+GET http://localhost:8080/chatai/bookRecommendation?
+    category={{$random.alphanumeric(8)}}
+
+###
+GET http://localhost:8080/chatai/seriesRecommendation?
+    category={{$random.alphanumeric(8)}}
+
+###
+GET http://localhost:8080/chatai/movieRecommendationWithSystemPrompt?
+    genre="action"
+
+###
+GET http://localhost:8080/chatai/moviesRecommendationOfActor?
+    actor="pierce brosnan"
+###
+GET http://localhost:8080/chatai/streamSeriesRecommendation?
+    category="romance"
+Accept: text/event-stream
